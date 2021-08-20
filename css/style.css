@@ -1,0 +1,199 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    font-family: 'Red Hat Display', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('/images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 98%);
+}
+
+.panel{
+    
+    text-align: center;
+    width:450px;
+    border-radius:20px;
+    background-color: white;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 45px;
+}
+
+.card-content{
+    margin:0 48px;
+}
+
+.card-title
+{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    color:#1f2E55;
+    margin-bottom: 17px;
+}
+
+.card-text{
+    color:#717FA6;
+    line-height: 26px;
+    /* padding:0 48px; */
+    margin-bottom: 20px;
+}
+
+.plan{
+    display: flex;
+    /* margin:0 48px; */
+    align-items: center;
+    justify-content: space-between;
+    background-color:#F7F9FF;
+    padding:25px 24px;
+    border-radius: 11px;
+}
+
+.plan-details{
+    display: flex;
+    align-items: center;
+}
+
+.plan-name{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.plan-price{
+    font-size: 16px;
+    color:#717FA6; 
+}
+
+.icon-music{
+    width: 48px;
+    margin-right:20px;
+}
+
+.payment-btn{
+    display: block;
+    padding:15px;
+    background-color:#382AE1;
+    margin:32px 0;
+    border-radius: 11px;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+
+.payment-btn:hover{
+    background-color: #766CF1;
+}
+
+.cancel-btn{
+    display: block;
+    text-decoration: none;
+    margin-bottom:48px;
+    font-weight: 700;
+    color:#717FA6;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 1;
+}
+
+.cancel-btn:hover{
+    color:#1f2E55; 
+}
+.change-plan{
+    color:#382AE1;
+    font-weight: bold;
+    text-align: right;
+    transition: all ease-in-out 1ms;
+}
+
+.change-plan:hover{
+    color:#766CF1;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:  )
+{
+    body{
+        background-image: url('/images/pattern-background-mobile.svg');
+    }
+
+    .card-content
+    {
+        margin: 0 24px;
+    }
+
+    .panel{
+        margin:24px;
+    }
+
+    .plan-name{
+        font-size: 14px;
+    }
+
+    .plan-price
+    {
+       font-size: 14px; 
+    }
+
+    .change-plan{
+        font-size: 13px;
+    }
+}
